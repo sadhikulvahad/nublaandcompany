@@ -1,32 +1,84 @@
-# React + TypeScript + Vite
+# Elena Vance, CMA — Management Accounting & Strategic Advisory
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+A multi-page, executive-tier corporate web application and professional portfolio built for **Vance Management Accounting & Strategic Advisory**. Built with modern web standards, responsive design, dual Light/Dark theme architecture, and interactive financial diagnostic tools.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🌟 Key Features
 
-## React Compiler
+- **Dual Light & Dark Theme Architecture**: Smooth, instant theme switching with a custom segmented toggle pill control (`[ ☀️ Light | 🌙 Dark ]`) and persistent `localStorage` user preferences.
+- **Executive Practice Areas**: Showcase of 6 core advisory capabilities including:
+  - **GST & Corporate Tax Architecture** (Input Tax Credit / ITC reconciliation, compliance)
+  - **Strategic Cost Architecture & Activity-Based Costing (ABC)**
+  - **Enterprise FP&A & 13-Week Rolling Cash Velocity Models**
+  - **Fractional CFO & Boardroom Advisory**
+  - **C-Suite KPI Decision Architecture**
+  - **Working Capital Engineering & DSO Compression**
+- **Interactive ROI & Capital Recovery Calculator**: Real-time diagnostic slider modeling annual enterprise revenue, SG&A overhead, EBITDA margin lift, and working capital liberation.
+- **Suite 400 Headquarters Showcase**: Interactive facility explorer detailing the Strategic Boardroom, Financial Vault, and Client Salon with floor specs and coordinates.
+- **Thought Leadership & Insights Hub**: Modal-driven editorial briefings covering cost engineering, liquidity management, and fiduciary governance.
+- **Confidential Intake Diagnostic Form**: Interactive consultation intake form with real-time validation and service URL parameter pre-filling.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the Oxlint configuration
+## 🛠️ Tech Stack
 
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
+- **Framework**: [React 19](https://react.dev/) + [TypeScript](https://www.typescriptlang.org/)
+- **Build Tool**: [Vite](https://vitejs.dev/)
+- **Styling**: [Tailwind CSS](https://tailwindcss.com/) with class-based Dark Mode
+- **Animations**: [Framer Motion](https://www.framer.com/motion/)
+- **Icons**: [Lucide React](https://lucide.dev/)
+- **Routing**: [React Router v7](https://reactrouter.com/)
 
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+- Node.js (v18+ recommended)
+- npm or yarn
+
+### Installation
+
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/your-username/nubi.git
+   cd nubi
+   ```
+
+2. **Install dependencies**:
+   ```bash
+   npm install
+   ```
+
+3. **Start the development server**:
+   ```bash
+   npm run dev
+   ```
+
+4. **Build for production**:
+   ```bash
+   npm run build
+   ```
+
+---
+
+## 📁 Project Structure
+
+```
+src/
+├── assets/          # Images & visual assets
+├── components/      # UI components (Navbar, Footer, ThemeToggle, etc.)
+├── config/          # Site configuration & content data (siteConfig.ts)
+├── context/         # React Context providers (ThemeContext.tsx)
+├── pages/           # Page routes (Home, About, Services, Office, Insights, Contact)
+├── App.tsx          # Main application component & routes
+├── index.css        # Tailwind directives & global styling layer
+└── main.tsx         # Entry point & ThemeProvider wrapper
 ```
 
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+---
+
+## 📄 License
+
+Copyright © 2026 Vance Management Accounting & Strategic Advisory. All rights reserved.
