@@ -1,0 +1,83 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    color-scheme: light dark;
+  }
+  body {
+    @apply bg-slate-50 text-slate-900 dark:bg-slate-950 dark:text-slate-100 transition-colors duration-300;
+  }
+}
+
+/* Custom Executive Glass & Lighting Effects */
+.glass-panel {
+  @apply bg-white/90 border border-slate-200/80 backdrop-blur-md dark:bg-slate-900/80 dark:border-slate-800 shadow-sm dark:shadow-none;
+}
+
+html.light .glass-panel {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(226, 232, 240, 0.9);
+  box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.04);
+}
+
+.glass-panel-gold {
+  @apply bg-amber-50/60 border border-gold-500/30 backdrop-blur-md dark:bg-slate-900/85 dark:border-gold-500/30;
+}
+
+html.light .glass-panel-gold {
+  background: rgba(255, 253, 248, 0.95);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(197, 157, 51, 0.35);
+  box-shadow: 0 10px 30px -5px rgba(197, 157, 51, 0.08);
+}
+
+.gold-gradient-text {
+  background: linear-gradient(135deg, #1e293b 0%, #8c6020 50%, #734d20 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+html.dark .gold-gradient-text {
+  background: linear-gradient(135deg, #fbf9f2 0%, #dfca7c 50%, #c59d33 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gold-gradient-button {
+  background: linear-gradient(135deg, #d2b450 0%, #b08226 60%, #8c6020 100%);
+  box-shadow: 0 4px 20px -2px rgba(197, 157, 51, 0.35);
+}
+
+.gold-gradient-button:hover {
+  background: linear-gradient(135deg, #dfca7c 0%, #c59d33 60%, #9e7123 100%);
+  box-shadow: 0 6px 25px -1px rgba(197, 157, 51, 0.5);
+}
+
+/* Custom subtle scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f8fafc;
+}
+html.dark ::-webkit-scrollbar-track {
+  background: #060a12;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+html.dark ::-webkit-scrollbar-thumb {
+  background: #1e293b;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+html.dark ::-webkit-scrollbar-thumb:hover {
+  background: #334155;
+}
